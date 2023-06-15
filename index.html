@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Carlos Peña: Cards e imagenes-->
+    <!--Jairo Colocho: Modal de interrogación-->
+    <!--David Menjívar: Navbar-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
+    <script src="javascript.js"></script>
+    <title>Pinterest</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+      <!--Home options-->
+      <div class="container-fluid">
+        <a class="navbar-brand text-center items-center" href="">
+          <img class="home-logo" src="./img/logo.png"></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="primary-options">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item home-option">
+                <a role="button" class="nav-link home-btn" action="on-click" href="" style="color:white;">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Create
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item option" href="#">Create Idea Pin</a></li>
+                  <li><a class="dropdown-item option" href="#">Create Pin</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!--Searchbar design-->
+                <input class="form-control me-2 searchBar" type="search" placeholder="Search" aria-label="Search">
+
+          <!--User options-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 user-options ">
+              <li class="nav-item left-items">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <img class="icons" src="./img/icons8-campana-96.png">
+                </a>
+              </li>
+              <li class="nav-item left-items">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <img class="icons" src="./img/icons8-burbuja-de-diálogo-con-puntos-100.png">
+                </a>
+              </li>
+              <li class="nav-item left-items">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <img class="icons" src="./img/icons8-usuario-90.png">
+                </a>
+              </li>
+            </ul>
+            <!-- dropdown settings -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li class="settings">Your accounts</li>
+                <li><button class="dropdown-item" type="button">Add account</button></li>
+                <li><button class="dropdown-item" type="button">Convert to business</button></li>
+                <li class="settings">More options</li>
+                <li><button class="dropdown-item" type="button">Settings</button></li>
+                <li><button class="dropdown-item" type="button">Tune your home feed</button></li>
+                <li><button class="dropdown-item" type="button">Install the Windows app</button></li>
+                <li><button class="dropdown-item" type="button">Your privacy rights</button></li>
+                <li><button class="dropdown-item" type="button">Get help</button></li>
+                <li><button class="dropdown-item" type="button">See terms of service</button></li>
+                <li><button class="dropdown-item" type="button">See privacy Policy</button></li>
+                <li><button class="dropdown-item" type="button">Be a beta tester</button></li>
+                <li><button class="dropdown-item" type="button">Log out</button></li>
+      
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+      <!--------------------------- GALERIA DE IMAGENES ----------------------------------- Peña -->
+      <div class="gallery" id="gallery">        
+
+    </div>
+    
+  </body>
+<!-----------------------------------------------------------Footer--------------------------------------------------------------------------------------------->
+    <footer>
+        <div class="footer">
+            <img src="img/pinterest-circular-logo-symbol.png" alt="Más">
+        </div>
+        <div class="ask" style="position:absolute"> 
+        <dialog id="modal">
+            <button class="cerrar" id="btn-cerrar-modal"></button>
+            <div class="help">
+                
+                <div class="visita">
+                    <div style="width: 283.5px; height: 21px; display: inline-block; text-align: left;">
+                        <label>Visita el Centro de asistencia</h2>
+                    </div>
+                    
+                    <img style="margin: 0px 0px 0px 8px; width: 0.5vw;" src="img/diagonal-arrow.png" >
+                </div>
+                <div class="visita">
+                    <div style="width: 283.5px; height: 21px; display: inline-block; text-align: left;">
+                        <label>Crear widget</h2>
+                    </div>
+                    
+                    <img style="margin: 0px 0px 0px 8px; width: 0.5vw;" src="img/diagonal-arrow.png" >
+                </div>
+                <div class="info" style="width: 335.5px; height: 124px; text-align: left; padding: 5px;">
+                    <div style="width: 33.44px; height: 27px; display: inline-block;"> 
+                        <a ><label for="">Info</label></a>
+                    </div>
+                    <div style="width: 36.92px; height: 27px; display: inline-block;">
+                        <a ><label for="">Blog</label></a>
+                    </div>
+                    <div style="width: 67.97px; height: 27px; display: inline-block;">
+                        <a ><label for="">Empresas</label></a>
+                    </div>
+                    <div style="width: 61.58px; height: 27px; display: inline-block;">
+                        <a ><label for="">Empleos</label></a>
+                    </div>
+                    <div style="width: 107.38px; height: 27px; display: inline-block;">
+                        <a ><label for="">Desarrolladores</label></a>
+                    </div>
+                    <div style="width: 94.34px; height: 27px; display: inline-block;">
+                        <a ><label for="">Eliminaciones</label></a>
+                    </div>
+                    <div style="width: 143.44px; height: 27px; display: inline-block;">
+                        <a ><label for="">Política de privacidad</label></a>
+                    </div>
+                    <div style="width: 165.38px; height: 27px; display: inline-block;">
+                        <a ><label for="">Anuncios personalizados</label></a>
+                    </div>
+                    <div style="width: 179.63px; height: 27px; display: inline-block;">
+                        <a ><label for="">Tus derechos de privacidad</label></a>
+                    </div>
+                    <div style="width: 85.56px; height: 27px; display: inline-block;">
+                        <a ><label for="">Condiciones</label></a>
+                    </div>                    
+
+                </div>
+            </div>
+        </dialog>
+            <button class="abrir" id="btn-abrir-modal"  href="">
+              <div class="interrogation">
+                  <img src="img/interrogatrion.png" alt="Más">
+              </div></button>
+        </div>
+        
+    </footer>
+    
+
+
+              <script src="./javascript/gallery.script.js"></script>
+              <script src="./javascript/searchBar.script.js"></script>
+              <script src="./javascript/modal.script.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+              <script src="https://kit.fontawesome.com/099d60dd9a.js" crossorigin="anonymous"></script>
+
+</html>

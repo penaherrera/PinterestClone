@@ -1,0 +1,282 @@
+
+
+
+
+
+
+
+
+/* COMPOSICION GENERAL DE LA GALERIA TIPO PINTEREST LAYOUT */
+.gallery{
+  columns: 6 220px;
+  column-gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1em;
+  border-radius: 6%;
+  display: block;
+  max-height: auto;
+}
+
+/* CARD DE LAS IMAGENES  */
+
+.imgcard {
+  position: relative;
+  display: inline-block;
+  
+}
+
+
+.content{
+  opacity: 0;
+}
+
+.imgcard:hover .content{
+  opacity: 1;
+}
+
+.imgcard:hover img{
+  filter: brightness(50%);
+}
+
+
+/* BOTON SAVE */
+.savebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: auto;
+  background-color: red;
+  border-radius: 30px ;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.savebtn h3 {
+  margin: 0;
+  color: #fff;
+  font-size:medium;
+}
+
+
+.savebtn:hover {
+  filter: brightness(75%);
+}
+
+/* BOTON LINK EJEMPLO */
+
+.exampleLink{
+  position: absolute;
+  width: 125px;
+  left: 10px;
+  bottom: 30px;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 30px ;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.exampleLink h3{
+  margin: 0;
+  font-size: 10px;
+}
+
+.exampleLink:hover {
+  opacity: 1;
+}
+
+
+/* BOTON SHARE */
+.sharebtn{
+  position: absolute;
+  right: 55px;
+  bottom: 30px;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 30px ;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.sharebtn img{
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.sharebtn:hover {
+  opacity: 1;
+}
+
+
+/* BOTON OPTIONS */
+
+.optionsbtn{
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 30px ;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.optionsbtn img{
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.optionsbtn:hover {
+  opacity: 1;
+}
+
+
+
+dialog{
+        border:0px solid black;
+        background-color:transparent;
+        position:absolute;
+        width:100%;
+        height:100%;        
+
+    }
+    .cerrar{
+        position:fixed;
+        width:100vw;
+        height:100vh;
+        border:0px;
+        left:0;
+        margin-top:0;
+        background-color:transparent;
+    }
+    .cerrar:hover{
+        background-color:transparent;
+    }
+    .ask{
+        right: 4vw;
+        bottom: 0vh;
+	    padding: 25px 5px;
+	    margin: 0;
+        
+    }
+    .help{
+        right: 8vw;
+        bottom: 2.5vh;
+        position:absolute;
+        background-color:white;
+        display: inline-block;
+        text-align: center;
+        border-radius: 16px;
+        box-shadow: 3px 3px px #888888;
+        padding: 5px;
+    }
+    .visita{
+        margin: auto;
+        padding: 5px;
+        font-size: 10pt;
+        font-weight: bolder;
+        width: 332px;
+        border-radius: 8px;
+    }
+    .visita label{
+        display: inline-block;
+    }
+    .visita img{
+      float: right;
+    }
+    .visita:hover{
+        background-color: #e9e9e9;
+        cursor: pointer;
+    }
+
+    .info{
+        margin-top: 1vh;
+        border-top: 1px solid gray;
+        padding: 10px;
+        color: gray;
+        font-size: 10pt;
+    }
+    .info div:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .info div label:hover{
+        cursor: pointer;
+    }
+
+    .abrir{
+	      display:fixed;
+        background-color:transparent;
+        border:0;
+	
+    }
+
+    .abrir:hover{
+        background-color:transparent;
+        
+    }
+    .interrogation{
+        width: 58px;
+        height: 58px;
+        box-shadow: 5px 10px 18px #888888;
+        text-align: center;
+        border-radius: 100%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+	background-color:white;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .interrogation:hover{
+        cursor: pointer;
+        
+    }
+    .interrogation img{
+        height: 25px;;
+    }
+    .abrir:hover >.interrogation{
+        background-color:gray;
+    }
+    .footer{
+        width:100%;
+        height:7vh;
+        bottom:0;
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer img{
+        
+        width:32px;
+    }
+    footer{
+        left:0;
+        
+    }
+    @media only screen and (max-width: 1011px) {
+        .help{
+            right: 4vw;
+            bottom: 90px;
+        }
+}

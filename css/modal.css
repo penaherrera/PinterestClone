@@ -1,0 +1,24 @@
+#btn-abrir-modal {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .help {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    transform: translateX(100%) translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  .help.open {
+    transform: translateX(0) translateY(0);
+  }
+
+  .interrogation img{
+    margin: 0 auto;
+  }
+  
+  
