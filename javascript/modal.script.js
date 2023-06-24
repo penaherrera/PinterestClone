@@ -17,10 +17,3 @@ btnAbrirModal.addEventListener("click", () => {
   });
   
 
-// btnAbrirModal.addEventListener("click",()=>{
-//     modal.showModal();
-// })
-
-// btnCerrarModal.addEventListener("click",()=>{
-//     modal.close();
-// })
